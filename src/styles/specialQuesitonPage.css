@@ -1,0 +1,111 @@
+/* ===========
+   Page Layout
+   =========== */
+html, body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;
+    background: linear-gradient(
+        to bottom,
+        #FCE4EC 0%,
+        #F8C8DC 50%,
+        #EFAFC7 100%
+    );
+    background-attachment: fixed;
+
+    font-family: 'Parisienne', cursive;
+}
+
+
+
+/* ==============
+   Content Layout
+   ============== */
+.specialContainer {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    width: min(1248px, 100%);
+}
+.specialImg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.specialTextBox {
+    position: absolute;
+
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40.865%;
+    height: 24.038%;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.specialSubject {
+    font-size: min(4.2vw, 55px);
+    color: #000000;
+}
+.specialQuestion {
+    margin: 0;
+    font-size: min(3.2vw, 40px);
+    color: #000000;
+}
+.specialNote {
+    margin: 0;
+    font-size: min(1.6vw, 20px);
+    color: #000000;
+}
+
+
+
+/* =============
+   Button Layout
+   ============= */
+.specialButtons {
+    margin: 0;
+    gap: 200px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.specialButton {
+    border: none;
+    width: 120px;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px 28px;
+    border-radius: 12px;
+    font-family: inherit;
+    transition: transform 0.25s ease, background-color 0.2s ease;
+}
+.yesButton {
+    color: white;
+    background-color: #e75480; 
+}
+.noButton {
+    color: #333333;
+    background-color: #ffffff;
+}
+.specialButton:hover {
+    filter: brightness(0.95);
+}
+.escapeMode {
+    position: relative;
+    min-height: 160px;
+}
+.escapeMode .noButton {
+    transition: left 0.2s ease-out, top 0.2s ease-out;
+}
